@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kanit;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#ffefba, #ffffff);
+    background-repeat: no-repeat;
+    margin-top: 15%;
+    background-image: url(intro.png);
+    border-radius: 10px;
+}
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 1% 0;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 20px;
+    background-color: aqua;
+    transition: top 0.3s;
+    position: fixed;
+    width: 100%;
+}
+h1.logo {
+    margin-left: 200px;
+    font-size: 40px;
+}
+nav ul {
+    margin-right: 200px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 20px;
+}
+nav ul li a:hover{
+    color: red;
+}
+.detel {
+    margin-right: 15%;
+    margin-top: 10%;
+    float: right;
+}
+.detel h1{
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.detel p{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.detel a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: orange;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.intro {
+    width: 45%;
+    height: 80%;
+    border-bottom: 50%;
+    left: 100px;
+}
+.mainpic{
+    margin-top: 15%;
+    margin-left: 50%;
+    border-radius: 10%;
+}
+.About{
+    margin-right: 0%;
+    float: right;
+}
+.About h1{
+    margin-top:10%;
+    margin-bottom: 3%;
+    font-size: 60px;
+    text-align: center;
+}
+
+.About p{
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    float: right;
+    margin-right: 27%;
+    line-height: 30px;
+    width: 35%;
+}
+.picme{
+    width: 400px;
+    height: 600px;
+    border-radius: 10%;
+    margin-left: 15%;
+    
+}
+.experience{
+    margin-top: 50%;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.experience h1{
+    margin-bottom: 5%;
+    margin-top: 15%;
+    text-align: center;
+    font-size: 60px;
+}
+.exp1{
+    margin-left: 15%;
+    width: 550px;
+    height: 690px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: black;
+    float: left;
+}
+.exp1 p{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.fix{
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 20px;
+    height: 400px;
+}
+.exp2{
+    margin-right: 20%;
+    width: 550px;
+    height: 690px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: black;
+    float: right;
+
+}
+.exp2 p{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.done{
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 20px;
+    height: 400px;
+}
+.contacts{
+    margin-top: 55%;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 32%;
+}
+.contacts h1{
+    font-size: 40px;
+}
+.contacts a{
+    background-color: #ecf0f3;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    margin: 0 10px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+    box-shadow: -3px -3px 7px #ffffff,
+                3px 3px 5px #ceced1;
+}
+.contacts a:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    transition: all 0.3s;
+    box-shadow: -3px -3px 7px #ffffff,
+                3px 3px 5px #ceced1;
+}
+.contacts a i{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    line-height: 60px;
+}
+.contacts a:hover i {
+    transform: scale(0.9);
+}
+.contacts a.fb i{
+    color: #426782;
+}
+.contacts a.git i{
+    color: #333;
+}
+.contacts a.insta i{
+    color: #E1306C;
+}
+@media screen and (min-width: 1920px) {
+    .hero {
+      max-width: 500px;
+    }
+  }
+  
+  @media screen and (min-width: 1080px) {
+    .hero {
+      max-width: 5000px;
+    }
